@@ -1,0 +1,40 @@
+{
+  "name": "ant-project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "tailwind": "npx tailwindcss -i ./src/assets/css/tailwind_org.css -o ./src/assets/css/tailwind_dist.css --watch"
+  },
+  "dependencies": {
+    "@antchain/jssdk": "^1.0.0-beta.18",
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "element-plus": "^2.2.18",
+    "events": "^3.3.0",
+    "install": "^0.13.0",
+    "pinia": "^2.0.21",
+    "process": "^0.11.10",
+    "safe-buffer": "^5.2.1",
+    "util": "^0.12.5",
+    "vue": "^3.2.38",
+    "vue-router": "^4.1.5"
+  },
+  "devDependencies": {
+    "@esbuild-plugins/node-globals-polyfill": "^0.1.1",
+    "@esbuild-plugins/node-modules-polyfill": "^0.1.4",
+    "@rollup/plugin-inject": "^5.0.0",
+    "@types/node": "^18.11.0",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vitejs/plugin-vue-jsx": "^2.0.1",
+    "daisyui": "^2.31.0",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "sass": "^1.55.0",
+    "tailwindcss": "^3.1.8",
+    "unplugin-auto-import": "^0.11.2",
+    "unplugin-vue-components": "^0.22.8",
+    "vite": "^3.0.9",
+    "vite-plugin-require-transform": "^1.0.3"
+  }
+}

@@ -1,0 +1,295 @@
+{
+    "____comment": "This file was generated with Myfish. DO NOT EDIT.",
+    "version": "mychain::abi/1.5",
+    "contract_version": 1,
+    "contract_git_id": "LianBo-Dapp1.0",
+    "vm_type": "wasm",
+    "source_type": "AssemblyScript",
+    "compiler_version": "Myfish 1.0.0-beta.13",
+    "message": "",
+    "interfaces": [
+        {
+            "name": "onContractDeploy",
+            "type": "onContractDeploy"
+        },
+        {
+            "name": "initMint",
+            "type": "initMint"
+        },
+        {
+            "name": "whiteListMint",
+            "type": "whiteListMint"
+        },
+        {
+            "name": "exchangeMint",
+            "type": "exchangeMint"
+        },
+        {
+            "name": "print",
+            "type": "print"
+        },
+        {
+            "name": "getAmbassadorRandom",
+            "type": "getAmbassadorRandom"
+        },
+        {
+            "name": "addAmbassadorType",
+            "type": "addAmbassadorType"
+        },
+        {
+            "name": "AssetMeta",
+            "type": "AssetMeta"
+        },
+        {
+            "name": "GetAsset",
+            "type": "GetAsset"
+        },
+        {
+            "name": "OwnerOf",
+            "type": "OwnerOf"
+        },
+        {
+            "name": "Issue",
+            "type": "Issue"
+        },
+        {
+            "name": "ReplaceIssue",
+            "type": "ReplaceIssue"
+        },
+        {
+            "name": "Transfer",
+            "type": "Transfer"
+        },
+        {
+            "name": "HasAsset",
+            "type": "HasAsset"
+        },
+        {
+            "name": "AssetCount",
+            "type": "AssetCount"
+        },
+        {
+            "name": "TotalAssetCount",
+            "type": "TotalAssetCount"
+        },
+        {
+            "name": "GetAssets",
+            "type": "GetAssets"
+        }
+    ],
+    "structs": [
+        {
+            "name": "onContractDeploy",
+            "fields": [],
+            "results": [
+                "void"
+            ]
+        },
+        {
+            "name": "initMint",
+            "fields": [
+                {
+                    "name": "uniqueRandom",
+                    "type": "uint32"
+                },
+                {
+                    "name": "ambassadorUri",
+                    "type": "string"
+                }
+            ],
+            "results": [
+                "string"
+            ]
+        },
+        {
+            "name": "whiteListMint",
+            "fields": [
+                {
+                    "name": "ambassadorChoice",
+                    "type": "uint32"
+                },
+                {
+                    "name": "ambassadorUri",
+                    "type": "string"
+                }
+            ],
+            "results": [
+                "string"
+            ]
+        },
+        {
+            "name": "exchangeMint",
+            "fields": [
+                {
+                    "name": "uniqueRandom",
+                    "type": "uint32"
+                },
+                {
+                    "name": "ambassadorUri",
+                    "type": "string"
+                }
+            ],
+            "results": [
+                "string"
+            ]
+        },
+        {
+            "name": "print",
+            "fields": [],
+            "results": [
+                "string"
+            ]
+        },
+        {
+            "name": "getAmbassadorRandom",
+            "fields": [],
+            "results": [
+                "uint32"
+            ]
+        },
+        {
+            "name": "addAmbassadorType",
+            "fields": [
+                {
+                    "name": "ambassadorType",
+                    "type": "string"
+                },
+                {
+                    "name": "identityRandom",
+                    "type": "uint32"
+                }
+            ],
+            "results": [
+                "bool"
+            ]
+        },
+        {
+            "name": "AssetMeta",
+            "fields": [],
+            "results": [
+                "string"
+            ]
+        },
+        {
+            "name": "GetAsset",
+            "fields": [
+                {
+                    "name": "assetId",
+                    "type": "string"
+                }
+            ],
+            "results": [
+                "string"
+            ]
+        },
+        {
+            "name": "OwnerOf",
+            "fields": [
+                {
+                    "name": "assetId",
+                    "type": "string"
+                }
+            ],
+            "results": [
+                "string"
+            ]
+        },
+        {
+            "name": "Issue",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "string"
+                },
+                {
+                    "name": "assetStr",
+                    "type": "string"
+                }
+            ],
+            "results": [
+                "void"
+            ]
+        },
+        {
+            "name": "ReplaceIssue",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "string"
+                },
+                {
+                    "name": "assetStr",
+                    "type": "string"
+                }
+            ],
+            "results": [
+                "void"
+            ]
+        },
+        {
+            "name": "Transfer",
+            "fields": [
+                {
+                    "name": "to",
+                    "type": "string"
+                },
+                {
+                    "name": "assetId",
+                    "type": "string"
+                }
+            ],
+            "results": [
+                "void"
+            ]
+        },
+        {
+            "name": "HasAsset",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "string"
+                },
+                {
+                    "name": "assetId",
+                    "type": "string"
+                }
+            ],
+            "results": [
+                "bool"
+            ]
+        },
+        {
+            "name": "AssetCount",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "string"
+                }
+            ],
+            "results": [
+                "uint64"
+            ]
+        },
+        {
+            "name": "TotalAssetCount",
+            "fields": [],
+            "results": [
+                "uint32"
+            ]
+        },
+        {
+            "name": "GetAssets",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "string"
+                }
+            ],
+            "results": [
+                "string"
+            ]
+        }
+    ],
+    "types": [],
+    "variants": []
+}
