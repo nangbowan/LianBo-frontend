@@ -6,7 +6,7 @@ import 'element-plus/es/components/message/style/css'
 import LianBoABI from './LianBoABI.json'
 import {SolContract, WasmContract} from '@antchain/jssdk'
 
-const CONTRACT_NAME = "LianBo-Dapp1.0"
+const CONTRACT_NAME = "LianBo-Dapp1.1"
 const IPFS_IMAGE_URL = 'https://lainbo-1310868664.cos.ap-nanjing.myqcloud.com/images/'
 const RANDOM_SEED = 'randomSeed'
 
